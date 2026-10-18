@@ -1,0 +1,97 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets & credentials - NEVER commit these
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+secrets/
+credentials/
+
+# Scratch / debug files
+_*
+*_out.txt
+
+# Runtime artifacts (screenshots, downloads, Playwright MCP session files)
+shots/
+downloads/
+.playwright-mcp/
+/*.png
+
+# PM2 runtime state
+.pm2/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/settings.json
+.idea/
+
+# Claude Code project memory (local only)
+.claude/
+
+# WhatsApp daemon: session + runtime state (NEVER commit - holds your login)
+whatsapp-mcp/.wwebjs_auth/
+whatsapp-mcp/.wwebjs_cache/
+whatsapp-mcp/autoreply-data.json
+whatsapp-mcp/claude-enabled.json
+whatsapp-mcp/claude-settings.json
+whatsapp-mcp/qr.png
+whatsapp-mcp/override-contacts.json
+whatsapp-mcp/reminders.db
+whatsapp-mcp/user-profile.json
+whatsapp-mcp/twin-chats.json
+whatsapp-mcp/tts-service/voice-sample.wav
+whatsapp-mcp/tts-service/voice-sample.txt
+
+# OAuth tokens & runtime databases — contain live credentials, never commit
+calendar-bridge/tokens/
+gmail-monitor/tokens/
+memory-store/memory.db
+price-tracker/prices.db
+
+# Console task tracker runtime state (written by Claude Code hooks)
+claude-tasks.json
+
+# Web UI runtime state (conversation history, persisted config, user data)
+webui/conversations/
+webui/uploads/
+webui/usage-log.json
+webui/hub-config.json
+webui/workflows.json
+webui/projects.json
+webui/params.json
+webui/hub-tasks.json
+
+# Build artifacts
+dist/
+build/
+*.exe
+# ...but ship the built web UI so the server machine can pull-and-run
+!webui/dist/
+
+# gmail-monitor runtime data (machine-specific, rewritten at runtime)
+gmail-monitor/classifier-feedback.json
+gmail-monitor/recent-emails.json
+
+# Machine-specific config (copy the *.example.json files)
+webui/devices.json
+whatsapp-mcp/briefing-settings.json
+
+# Agent tooling scratch
+.superpowers/

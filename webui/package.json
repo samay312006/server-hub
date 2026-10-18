@@ -1,0 +1,15 @@
+{
+  "name": "server-hub-webui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Custom web UI bridging browser devices to the claude CLI (subscription, no API key)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ssh2": "^1.16.0",
+    "ws": "^8.18.0"
+  }
+}

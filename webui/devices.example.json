@@ -1,0 +1,20 @@
+[
+  {
+    "id": "my-laptop",
+    "name": "Dev laptop",
+    "host": "100.x.y.z",
+    "agentPort": 8088,
+    "kind": "agent",
+    "sshUser": "your-windows-user",
+    "sshPort": 22
+  },
+  {
+    "id": "my-server",
+    "name": "Home server",
+    "host": "100.x.y.z",
+    "agentPort": 8088,
+    "kind": "hub",
+    "sshUser": "your-windows-user",
+    "sshPort": 22
+  }
+]
